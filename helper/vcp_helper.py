@@ -65,14 +65,14 @@ class jepthonvc:
                 await self.client(
                     functions.phone.CreateGroupCallRequest(
                         peer=chat,
-                        title="jepthon VC",
+                        title="Repthon VC",
                     )
                 )
                 await self.join_vc(chat=chat, join_as=join_as)
             except ChatAdminRequiredError:
                 return "- عليك ان تكون مشرف في الدردشة اولا"
         except (NodeJSNotInstalled, TooOldNodeJSVersion):
-            return "- عليك تثبيت المتطلبات اولا شاهاد القناة الاساسية @jepthon"
+            return "- عليك تثبيت المتطلبات اولا شاهاد القناة الاساسية @Repthon"
         except AlreadyJoinedError:
             await self.app.leave_group_call(chat.id)
             await asyncio.sleep(3)
