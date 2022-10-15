@@ -44,7 +44,7 @@ async def start_vc(event):
         await jepiq(
             functions.phone.CreateGroupCallRequest(
                 peer=vc_chat,
-                title="jepthon VC",
+                title="Repthon VC",
             )
         )
         await edit_delete(event, "**- تم بنجاح تشغيل المكالمة الصوتية**")
